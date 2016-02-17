@@ -4,7 +4,7 @@ using System.Collections;
 public class Cochi : MonoBehaviour {
 	private Rigidbody rgb;
 	private float x, y;
-	public enemic ene;
+	public  enemic ene;
 	private Vector3 acc;
 	public Transform TerraCop;
     public GameObject particules;
@@ -34,8 +34,8 @@ public class Cochi : MonoBehaviour {
 		mdl = Mathf.Sqrt (x * x + y * y);
         if (Input.GetKey(KeyCode.LeftAlt))
         {
-            particules.SetActive(true);
-        }
+           particules.SetActive(true);
+        } 
         else
         {
             particules.SetActive(false);
@@ -95,7 +95,6 @@ public class Cochi : MonoBehaviour {
 		if(col.gameObject.CompareTag("CheckBox"))
 		{
 			ene.strart = false;
-
 		}
 	}
    
